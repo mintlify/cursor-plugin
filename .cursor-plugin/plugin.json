@@ -1,0 +1,12 @@
+{
+  "name": "mintlify-cursor-plugin",
+  "version": "0.1.0",
+  "description": "Comprehensive reference for building Mintlify documentation sites.",
+  "author": {
+    "name": "Mintlify",
+    "email": "support@mintlify.com"
+  },
+  "license": "MIT",
+  "keywords": ["mintlify", "docs", "documentation", "mdx"],
+  "skills": "./skills/"
+}
