@@ -1,0 +1,77 @@
+---
+description: Writing standards and file conventions for Mintlify documentation sites.
+alwaysApply: false
+globs: ["**/*.mdx", "**/docs.json"]
+---
+
+# Mintlify documentation rules
+
+## Before you start
+
+Read the project's `docs.json` file first. It defines the site's navigation, theme, colors, and configuration.
+
+Search for existing content before creating new pages. You may need to update an existing page, add a section, or link to existing content rather than duplicating.
+
+Read 2-3 similar pages to match the site's voice, structure, and formatting.
+
+## File conventions
+
+- Config file is always `docs.json` — never `mint.json` (deprecated)
+- File naming: match existing patterns; default to kebab-case (`getting-started.mdx`)
+- New pages must be added to `docs.json` navigation or they won't appear in the sidebar
+
+### Internal links
+
+- Use root-relative paths without file extensions: `/getting-started/quickstart`
+- Do not use relative paths (`../`) or absolute URLs for internal pages
+
+### Images
+
+Store images in an `images/` directory. Reference with root-relative paths. All images require descriptive alt text.
+
+```mdx
+![Dashboard showing analytics overview](/images/dashboard.png)
+```
+
+## Page frontmatter
+
+Every page requires `title`. Include `description` and `keywords` for SEO.
+
+```yaml
+---
+title: "Clear, descriptive title"
+description: "Concise summary for SEO and navigation."
+keywords: ["relevant", "search", "terms"]
+---
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `title` | string | Yes | Page title in navigation and browser tabs. |
+| `description` | string | No | Brief description for SEO. Displays under the title. |
+| `sidebarTitle` | string | No | Short title for sidebar navigation. |
+| `icon` | string | No | Lucide, Font Awesome, or Tabler icon name. Also accepts a URL or file path. |
+| `tag` | string | No | Label next to page title in sidebar (e.g., "NEW"). |
+| `hidden` | boolean | No | Remove from sidebar. Page still accessible by URL. |
+| `mode` | string | No | Page layout: `default`, `wide`, `custom`, `frame`, `center`. |
+| `keywords` | array | No | Search terms for internal search and SEO. |
+
+## Writing standards
+
+- Second-person voice ("you").
+- Active voice, direct language.
+- Sentence case for headings ("Getting started", not "Getting Started").
+- Sentence case for code block titles.
+- All code blocks must have language tags.
+- All images must have descriptive alt text.
+- No marketing language, filler phrases, or emoji.
+- Keep code examples simple, practical, and tested.
+
+## Common mistakes
+
+- Using `mint.json` — it is deprecated. The config file is always `docs.json`.
+- Missing language tag on a code block (use ` ```python `, not ` ``` `).
+- Using relative paths (`../page`) instead of root-relative (`/section/page`).
+- Forgetting to add new pages to `docs.json` navigation.
+- Images without alt text.
+- Adding file extensions to internal links (`/page.mdx` instead of `/page`).
