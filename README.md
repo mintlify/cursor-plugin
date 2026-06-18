@@ -1,6 +1,6 @@
 # Mintlify Cursor plugin
 
-A Cursor plugin that gives Cursor a comprehensive reference for building [Mintlify](https://mintlify.com) documentation sites.
+A Cursor plugin that gives Cursor a comprehensive reference for building [Mintlify](https://mintlify.com) sites.
 
 ## What it does
 
