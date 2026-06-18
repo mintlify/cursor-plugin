@@ -1,10 +1,10 @@
 ---
-description: Writing standards and file conventions for Mintlify documentation sites.
+description: Writing standards and file conventions for Mintlify sites.
 alwaysApply: false
 globs: ["**/*.mdx", "**/docs.json"]
 ---
 
-# Mintlify documentation rules
+# Mintlify rules
 
 ## Before you start
 
@@ -69,9 +69,9 @@ keywords: ["relevant", "search", "terms"]
 
 ## Common mistakes
 
-- Using `mint.json` — it is deprecated. The config file is always `docs.json`.
+- Using `mint.json` — it is deprecated. The config file is always `s.json`.
 - Missing language tag on a code block (use ` ```python `, not ` ``` `).
 - Using relative paths (`../page`) instead of root-relative (`/section/page`).
-- Forgetting to add new pages to `docs.json` navigation.
+- Forgetting to add new pages to `s.json` navigation.
 - Images without alt text.
 - Adding file extensions to internal links (`/page.mdx` instead of `/page`).
