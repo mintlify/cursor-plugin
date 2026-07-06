@@ -1,7 +1,7 @@
 {
   "name": "mintlify-cursor-plugin",
   "version": "0.1.0",
-  "description": "Comprehensive reference for building Mintlify documentation sites.",
+  "description": "Comprehensive reference for building Mintlify sites.",
   "author": {
     "name": "Mintlify",
     "email": "support@mintlify.com"
