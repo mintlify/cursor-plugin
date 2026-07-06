@@ -55,15 +55,6 @@ All `mint automations` subcommands share these flags: `--subdomain`, `--format` 
 - `mint update` — Update the CLI to the latest version.
 - `mint version` — Show installed CLI and client versions.
 
-## Coming soon
-
-These commands are registered but not yet functional. Running them records interest via telemetry.
-
-- `mint ai` — AI-powered documentation tools.
-- `mint test` — Documentation testing.
-- `mint signup` — Account sign-up from the CLI.
-- `mint mcp` — MCP server for documentation.
-
 ## Telemetry
 
 The CLI collects anonymous usage telemetry by default. Opt out with `--telemetry false` or by setting either environment variable:
